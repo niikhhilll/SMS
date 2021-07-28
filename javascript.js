@@ -2,7 +2,7 @@
 function uname() {
     var username = document.getElementById("uname").value;
     if (username.length < 6) {
-        document.getElementById("ename").innerHTML = "  *Username should be at least 6 characters";
+        var e = document.getElementById("ename").innerHTML = "  *Username should be at least 6 characters";
         return false;
     }
     else return true;
@@ -33,15 +33,15 @@ function validate() {
 function pageRedirect() {
     const name = document.getElementById('uname').value;
 
-    if(name.charAt(0) == 'S' || name.charAt(0) == 's' ){
+    if (name.charAt(0) == 'S' || name.charAt(0) == 's') {
         document.login.action = "student.html";
     }
 
-    if(name.charAt(0) == 'T' || name.charAt(0) == 't' ){
+    if (name.charAt(0) == 'T' || name.charAt(0) == 't') {
         document.login.action = "teacher.html";
     }
 
-    if(name.charAt(0) == 'A' || name.charAt(0) == 'a' ){
+    if (name.charAt(0) == 'A' || name.charAt(0) == 'a') {
         document.login.action = "admin.html";
     }
     else return "";
@@ -50,13 +50,12 @@ function pageRedirect() {
 //My Profile
 $(document).ready(function () {
     $(".fademet").click(function () {
-      $(".men_ex").fadeIn(onclick);
+        $(".men_ex").fadeIn(onclick);
 
     });
 
     $(".fademet").click(function () {
-      $(".men_ex").fadeOut(5500);
-      
-    });
+        $(".men_ex").fadeOut(5500);
 
-  });
+    });
+});
