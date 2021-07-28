@@ -30,7 +30,7 @@ label {
 input[type=submit] {    
   background-color: rgb(37, 116, 161);    
   color: white;    
-  padding: 12px 20px;    
+  padding: 12px 70px;    
   border: none;    
   border-radius: 4px;    
   cursor: pointer;    
@@ -42,15 +42,18 @@ input[type=submit]:hover {
 }    
     
 .container {    
-  border-radius: 5px;    
-  background-color: #f2f2f2;    
-  padding: 20px;    
+  border-radius: 25px;    
+  background-color: #d2abab;    
+  padding: 25px;
+  padding-left: 50px;
+  padding-right: 50px;    
 }    
     
 .col-25 {    
   float: left;    
-  width: 25%;    
-  margin-top: 6px;    
+  width: 15%;    
+  margin-top: 6px;
+  font-weight: 600;    
 }    
     
 .col-75 {    
@@ -70,7 +73,7 @@ input[type=submit]:hover {
 </style>    
 </head>    
 <body>    
-<h2>FEED BACK FORM</h2>    
+<h2 style="font-family:cursive">REGISTRATION FORM</h2>    
 <div class="container">    
   <form>    
     <div class="row">    
@@ -78,7 +81,7 @@ input[type=submit]:hover {
         <label for="fname">First Name</label>    
       </div>    
       <div class="col-75">    
-        <input type="text" id="fname" name="firstname" placeholder="Your name..">    
+        <input type="text" id="fname" name="firstname" placeholder="Your name.." required>    
       </div>    
     </div>    
     <div class="row">    
@@ -86,44 +89,56 @@ input[type=submit]:hover {
         <label for="lname">Last Name</label>    
       </div>    
       <div class="col-75">    
-        <input type="text" id="lname" name="lastname" placeholder="Your last name..">    
+        <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>    
       </div>    
     </div>    
     <div class="row">    
         <div class="col-25">    
-          <label for="email">Mail Id</label>    
+          <label for="username">Username</label>    
         </div>    
         <div class="col-75">    
-          <input type="email" id="email" name="mailid" placeholder="Your mail id..">    
+          <input type="text" id="username" name="username" placeholder="Choose username.." required>    
         </div>    
-      </div>    
+      </div>
+      <div class="row">    
+        <div class="col-25">
+        <label class="form-label" for="dob">Date of Birth</label>
+        </div>
+        <div class="col-75" style="padding-top: 5px;"> 
+        <input type="date" name="date" class="form-control" style="height: 30px;" id="dob" required> <br>
+        </div>
+    </div>    
     <div class="row">    
       <div class="col-25">    
-        <label for="country">Country</label>    
+        <label for="class">Class</label>    
       </div>    
       <div class="col-75">    
-        <select id="country" name="country">    
-            <option value="none">Select Country</option>    
-          <option value="australia">Australia</option>    
-          <option value="canada">Canada</option>    
-          <option value="usa">USA</option>    
-          <option value="russia">Russia</option>    
-          <option value="japan">Japan</option>    
-          <option value="india">India</option>    
-          <option value="china">China</option>    
+        <select id="country" name="class" required>    
+            <option value="none">Select Class</option>    
+          <option value="1">1st</option>    
+          <option value="2">2nd</option>    
+          <option value="3">3rd</option>    
+          <option value="4">4th</option>    
+          <option value="5">5th</option>    
+          <option value="6">6th</option>    
+          <option value="7">7th</option> 
+          <option value="8">8th</option>
+          <option value="9">7th</option>
+          <option value="10">10th</option>   
         </select>    
       </div>    
     </div>    
     <div class="row">    
       <div class="col-25">    
-        <label for="feed_back">Feed Back</label>    
+        <label for="address">Address</label>    
       </div>    
       <div class="col-75">    
-        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>    
+        <textarea id="address" name="address" placeholder="Your address.." style="height:100px" required></textarea>    
       </div>    
-    </div>    
+    </div>
+    <br>    
     <div class="row">    
-      <input type="submit" value="Submit">    
+      <input type="submit" value="Add">    
     </div>    
   </form>    
 </div>    
