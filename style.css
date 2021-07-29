@@ -137,11 +137,11 @@ anime {
 }
 
 .login {
-  width: 382px;
+  width: 26%;
   overflow: hidden;
   margin: auto;
   margin: 20 0 0 450px;
-  padding: 80px;
+  padding: 50px;
   background: #000000a8;
   border-radius: 15px;
 }
@@ -158,7 +158,7 @@ label {
 }
 
 #uname {
-  width: 300px;
+  width: 96%;
   height: 30px;
   border: none;
   border-radius: 3px;
@@ -166,7 +166,7 @@ label {
 }
 
 #pass {
-  width: 300px;
+  width: 96%;
   height: 30px;
   border: none;
   border-radius: 3px;
@@ -174,7 +174,7 @@ label {
 }
 
 #log {
-  width: 100px;
+  width: 100%;
   height: 30px;
   border: none;
   cursor: pointer;

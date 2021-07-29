@@ -1,115 +1,197 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <link href="style.css" rel="stylesheet">
-   
 
-    <title>School Management System</title>
-  </head>
-  <body style="background-image: url(image/index.jpg);">
-    <div class="header">
-      <img class="logoimg" src="logo.png">
-      <!-- <a href="#default" class="logo"> &nbsp; ABC ENGLISH MEDIUM SCHOOL</a> -->
-      <div class="header-right">
-        <a class="active" href="#home">Home</a>
-        <a href="login.html">Login</a>
-        <a href="#contact">Contact</a>
-        <a href="#about">About</a>
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <link href="style.css" rel="stylesheet">
+
+
+  <title>School Management System</title>
+</head>
+
+<body style="background-image: url(image/index.jpg);">
+  <div class="header">
+    <img class="logoimg" src="logo.png">
+    <!-- <a href="#default" class="logo"> &nbsp; ABC ENGLISH MEDIUM SCHOOL</a> -->
+    <div class="header-right">
+      <a class="active" href="#home">Home</a>
+      <a href="login.html">Login</a>
+      <a href="#contact">Contact</a>
+      <a href="#AboutUs">About</a>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="12">
+        <marquee behavior="right" direction="">
+          <h1>School Management System</h1>
+        </marquee>
       </div>
     </div>
-    
-    <div class="container-fluid">
-      <div class="row">
-        <div class="12">
-          <marquee behavior="right" direction="">
-            <h1>School Management System</h1>
-          </marquee>
+
+    <div class="row">
+      <div class="col-md-12">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="image/slide2.jpg" class="d-block w-50" style="margin-left: 25%;" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="image/slide3.jpg" class="d-block w-50" style="margin-left: 25%; " alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="image/slide1.jpg" class="d-block w-50" style="margin-left: 25%; " alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
       </div>
-
-      <div class="row">
-        <div class="col-md-12">
-          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="image/slide2.jpg" class="d-block w-50" style="margin-left: 25%;" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="image/slide3.jpg" class="d-block w-50"  style="margin-left: 25%; "alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="image/slide1.jpg" class="d-block w-50"  style="margin-left: 25%; " alt="...">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-              data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-              data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-        </div>
     </div>
     <br><br>
     <div class="paragraph" style="text-align:center;"><br>
-      <a style="color:aliceblue;font-size:2em">&ZeroWidthSpace;<p class="line-1 anim-typewriter" style="text-align:center;font-family:serif;">Mission Statement</p></a><br><em>
-        <a style="color:aliceblue;font-size: 25px;padding: 20px;">To provide financial support for the schools of ABC in order to maintain consistently high quality educational opportunities for the children of the communities served.</a></em></div>
-        <br><br><br>
+      <a style="color:aliceblue;font-size:2em">&ZeroWidthSpace;<p class="line-1 anim-typewriter"
+          style="text-align:center;font-family:serif;">Mission Statement</p></a><br><em>
+        <a style="color:aliceblue;font-size: 25px;padding: 20px;">To provide financial support for the schools of ABC in
+          order to maintain consistently high quality educational opportunities for the children of the communities
+          served.</a></em>
+    </div>
+    <br><br><br>
+    <div class="wsite-section-elements">
+      <h2 id="AboutUs" class="wsite-content-title"
+        style="color: rgb(163, 240, 252); font-size: 2.3em ;text-align: center">
+        About Us<br />
+      </h2>
 
-        <div class="footer-wrap">
-          <div class="site-footer container">
-            <div class="wsite-elements wsite-footer">
-      <h2 class="wsite-content-title" style="text-align:left;"><a style="font: size 1.5em;color:aliceblue;">contact us</a></h2>
-      
-      <div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -25px;">
-        <table class="wsite-multicol-table">
-          <tbody class="wsite-multicol-tbody">
-            <tr class="wsite-multicol-tr">
-              <td class="wsite-multicol-col" style="width:20.854775642852%; padding:0 25px;">
-                
-                  
-      
-      <div class="paragraph" style="text-align:left;"><a style="color:#f5f5f5"><strong>Phone</strong>&nbsp;<br>(562) 925-5566 Ext. 21197<br><strong>Email</strong><br>info@abcedfoundation.org</a></div>
-      
-      
-                
-              </td>				<td class="wsite-multicol-col" style="width:79.145224357148%; padding:0 25px;">
-                
-                  
-      
-      <div class="wsite-spacer" style="height:74px;"></div>
-      
-      <div style="text-align:right;"><div style="height:10px;overflow:hidden"></div>
-      <span class="wsite-social wsite-social-default"><a class="first-child wsite-social-item wsite-social-facebook" href="// https://www.facebook.com/ABCEducationFoundation/)facebook.com" target="_blank" alt="Facebook" aria-label="Facebook"><span class="wsite-social-item-inner"></span></a><a class="last-child wsite-social-item wsite-social-mail" href="// info@abcedfoundation.org" target="_blank" alt="Mail" aria-label="Mail"><span class="wsite-social-item-inner"></span></a></span>
-      <div style="height:0px;overflow:hidden"></div></div>
-      
-      <div class="paragraph" style="text-align:right;"><a style="font-size:1">© COPYRIGHT 2015. ALL RIGHTS RESERVED.</a></div>
-      
-      
-                
-              </td>			</tr>
-          </tbody>
-        </table>
-        
-      </div></div></div></div>
+      <div class="paragraph bg-dark rounded p-3" style="color: cornsilk;text-align: center">
+        The ABC Education Foundation provides financial support and enrichment
+        programs for ABCUSD students.&nbsp;Founded by committed educators and
+        staff, one of the primary goals was to provide support for ABC students,
+        pre-school through adult school.&nbsp;&nbsp;The Foundation strongly
+        believes that only through community support can we begin to overcome
+        the budget cuts that ABC education programs have suffered in the past
+        four years. Only through your support can we provide the best
+        educational opportunities for our students. When you invest in the ABC
+        Education Foundation with your donation, you are joining us with a
+        strong statement of support for this concept—that our children deserve
+        the best education possible. That our community will continue to provide
+        the best school district in the area. That our children and their future
+        are that important to you.<br />&nbsp;<br />The ABC Education Foundation
+        works with local corporations, retailers, business people, educators,
+        parents, caretakers and grandparents to ensure that an ABCUSD education
+        is the best it can be.<br />
+      </div>
+
+      <h2 class="wsite-content-title" style="text-align: center">
+        <span style="color:  rgb(163, 240, 252);font-size: 0.8em; font-weight: 700">About the ABC Education
+          Foundation</span>
+      </h2>
+
+      <div class="paragraph bg-dark rounded p-3" style="color: cornsilk;text-align: center">
+        The ABC Education Foundation was founded in 2010, and given approval on
+        June 16, 2011 as a 501 (c) (3), which gives the district exempt status
+        from Federal income tax of the Internal Revenue Code. The Foundation was
+        formed to support district programs that do not receive the funding they
+        need for students success. The Foundation provides financial support and
+        enrichment programs for all schools in ABC.&nbsp;The ABC Education
+        Foundation is organized to conduct fundraising and technical assistance
+        support to the ABC Unified School District.<br /><br />ABC serves thirty
+        schools with a student population of approximately 21,500 (K-12)
+        students in five major communities, which include the cities of Artesia,
+        Cerritos, Hawaiian Gardens, Lakewood and Norwalk.<br />ABC is considered
+        by the U.S. Census survey as one of the most ethnically and
+        <br />linguistically diverse communities in the United States.<br />The
+        ABC Education Foundation is committed to the nurturing and development
+        of every&nbsp;student that attends the ABCUSD. The ABC Education
+        Foundation is a nonprofit organization founded to support the district’s
+        educational goal of raising student achievement.<br />Some of our annual
+        activities include: an&nbsp; annual 5K Fun Run/Walk, free backpacks with
+        school supplies for financially disadvantaged students, and our annual
+        mini-grant program where we give back the funds we've raised to fund
+        important programs at schools throughout the ABC Unified School
+        District.
+      </div>
+      <br><br><br>
+
+    </div>
+
+    <div class="footer-wrap">
+      <div class="site-footer container">
+        <div class="wsite-elements wsite-footer">
+          <h2 id="contact" class="wsite-content-title" style="text-align:left;"><a
+              style="font: size 1.5em;color:aliceblue;">CONTACT US</a></h2>
+
+          <div>
+            <div class="wsite-multicol">
+              <div class="wsite-multicol-table-wrap" style="margin:0 -25px;">
+                <table class="wsite-multicol-table">
+                  <tbody class="wsite-multicol-tbody">
+                    <tr class="wsite-multicol-tr">
+                      <td class="wsite-multicol-col" style="width:20.854775642852%; padding:0 25px;">
+
+
+
+                        <div class="paragraph" style="text-align:left;"><a style="color:#f5f5f5"><strong>Phone -
+                            </strong>&nbsp; (+91) 92325-55566 <br><br><strong >Email - </strong>&nbsp;
+                            info@abcfoundation.org</a></div>
+
+
+
+                      </td>
+                      <td class="wsite-multicol-col" style="width:79.145224357148%; padding:0 25px;">
+
+
+
+                        <div class="wsite-spacer" style="height:74px;"></div>
+
+                        <div style="text-align:right;">
+                          <div style="height:10px;overflow:hidden"></div>
+                          <span class="wsite-social wsite-social-default"><a
+                              class="first-child wsite-social-item wsite-social-facebook"
+                              href="// https://www.facebook.com/ABCEducationFoundation/)facebook.com" target="_blank"
+                              alt="Facebook" aria-label="Facebook"><span class="wsite-social-item-inner"></span></a><a
+                              class="last-child wsite-social-item wsite-social-mail" href="// info@abcedfoundation.org"
+                              target="_blank" alt="Mail" aria-label="Mail"><span
+                                class="wsite-social-item-inner"></span></a></span>
+                          <div style="height:0px;overflow:hidden"></div>
+                        </div>
+
+                        <div class="paragraph" style="text-align:right;"><a style="font-size:1">©COPYRIGHT MH-19. ALL
+                            RIGHTS RESERVED.</a></div><br><br </td>
+                    </tr>
+                  </tbody>
+                </table>
+
+              </div>
+            </div>
           </div>
         </div>
-  </body>
+      </div>
+    </div>
+</body>
+
 </html>
