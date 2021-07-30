@@ -13,6 +13,8 @@
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
     <script src="javascript.js"></script>
 
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <title>Admin</title>
   </head>
 
@@ -29,8 +31,8 @@
     </div>
     <div class="men_ex">
       <ul>
-        <li><a href="#">Update Profile</a></li>
-        <li><a href="#">Change Password</a></li>
+        <li><a href="#updateProfileModal" class="delete" data-toggle="modal">Update Profile</a></li>
+        <!-- <li><a href="#">Change Password</a></li> -->
       </ul>
     </div>
 
@@ -134,5 +136,28 @@
         </div>
       </div>
     </div>
+
+    <!-- Update Profile HTML -->
+  <div id="updateProfileModal" class="modal fade">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <form>
+          <div class="modal-header">
+            <h4 class="modal-title">Update Profile</h4>
+          </div>
+          <div class="modal-body">
+            <p class="p-1">First Name : <span style="padding-left: 50px;"><input type="text" ></p></span> 
+            <p class="p-1">Last Name : <span style="padding-left: 51px;"><input type="text" ></p></span>
+            <p class="p-1">Change Password : <span style="padding-left: 5px;"><input type="text" ></p></span>
+            <p class="p-1">Confirm Password : <span style="padding-left: 4px;"><input type="text" ></p></span>
+          </div>
+          <div class="modal-footer">
+            <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel" />
+            <input type="submit" class="btn btn-success" value="Update" />
+          </div>
+        </form>
+      </div>
+    </div>
+
   </body>
 </html>

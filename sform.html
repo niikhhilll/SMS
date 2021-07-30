@@ -3,6 +3,41 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script>
+        var myJSON;
+        function convertToJason() {
+            var a = document.getElementById("fame").value;
+            var b = document.getElementById("mname").value;
+            var c = document.getElementById("lname").value;
+            var d = document.getElementById("username").value;
+            var e = document.getElementById("class").value;
+            var f = document.getElementById("dob").value;
+            // var g = document.getElementById("gender").value;
+            var h = document.getElementById("phone").value;
+            var i = document.getElementById("address").value;
+            var j = document.getElementById("email").value;
+            var k = document.getElementById("password").value;
+            var myobj = { Firstname: a, Middlename: b, Lastname: c, Username: d, Class: e, BirthDate: f,  MobileNo: h, Address: i, Email: j, Password: k };
+            myJSON = JSON.stringify(myobj);
+            console.log(myJSON);
+        }
+
+        function saveToFile() {
+            convertToJason();
+            var blob = new Blob([myJSON], {
+                type: "octet/stream",
+            });
+            //console.log(blob);
+            var anchor = document.createElement("a");
+            anchor.download = "data.json";
+            anchor.href = window.URL.createObjectURL(blob);
+            anchor.innerHTML = "download";
+            anchor.click();
+            //console.log(anchor);
+        }
+    </script>
+
     <style>
         body {
             font-family: Calibri, Helvetica, sans-serif;
@@ -84,30 +119,34 @@
             opacity: 5;
         }
     </style>
+<title>Students Registration Form</title>
 </head>
 
 <body>
-    <form style="color:cornsilk">
+    <form style="color:cornsilk" onsubmit="saveToFile()">
         <div class="container">
             <center>
                 <h1> Student Registration Form</h1>
             </center>
             <hr>
             <label> Firstname </label>
-            <input type="text" style="border-radius:7px" name="firstname" placeholder="Firstname" size="10" required />
+            <input type="text" style="border-radius:7px" id="fname" placeholder="Firstname" pattern="[A-Za-z]{3,10}"
+                required />
             <label> Middlename: </label>
-            <input type="text" style="border-radius:7px" name="middlename" placeholder="Middlename" size="10"
+            <input type="text" style="border-radius:7px" id="mname" placeholder="Middlename" pattern="[A-Za-z]{3,10}"
                 required />
             <label> Lastname: </label>
-            <input type="text" style="border-radius:7px" name="lastname" placeholder="Lastname" size="10" required />
+            <input type="text" style="border-radius:7px" id="lname" placeholder="Lastname" pattern="[A-Za-z]{3,10}"
+                required />
             <label> Username </label>
-            <input type="text" style="border-radius:7px" name="username" placeholder="Username" size="10" required />
+            <input type="text" style="border-radius:7px" id="username" placeholder="Username" pattern="[A-Za-z0-9]{6}"
+                required />
             <div>
                 <label style="margin-left: 20%;">
                     Class :
                 </label>
 
-                <select style="height:30px; width: 110px">
+                <select style="height:30px; width: 110px" id="class" required>
                     <option value="none">Select Class</option>
                     <option value="1st">1st</option>
                     <option value="3rd">3rd</option>
@@ -124,28 +163,29 @@
                 <label>
                     Gender :
                 </label><br>
-                <input type="radio" style="border-radius:7px" value="Male" name="gender" checked> Male
-                <input type="radio" style="border-radius:7px" value="Female" name="gender"> Female
-                <input type="radio" style="border-radius:7px" value="Other" name="gender"> Other
+                <input type="radio" style="border-radius:7px" value="Male" name="gender"/> Male
+                <input type="radio" style="border-radius:7px" value="Female" name="gender"/> Female
+                <input type="radio" style="border-radius:7px" value="Other" name="gender"/> Other
 
             </div>
             <label>
                 Phone :
             </label>
-            <input type="text" style="border-radius:7px" name="phone" placeholder="Phone no." size="10" / required>
+            <input type="text" style="border-radius:7px" name="phone" id="phone" placeholder="Phone no."
+                pattern="[0-9]{10}" required>
             Current Address :
-            <textarea style="border-radius:7px" cols="80" rows="5" placeholder="Current Address" value="address"
-                required>
+            <textarea style="border-radius:7px" cols="80" rows="5" placeholder="Current Address" id="address" required>
 </textarea>
             <label for="email"><b>Email</b></label>
-            <input type="text" style="border-radius:7px" placeholder="Enter Email" name="email" required>
+            <input type="text" style="border-radius:7px" placeholder="Enter Email" name="email" id="email" required>
 
             <label for="psw"><b>Password</b></label>
-            <input type="password" style="border-radius:7px" placeholder="Enter Password" name="psw" required>
+            <input type="password" style="border-radius:7px" placeholder="Enter Password" name="psw" id="password"
+                required>
 
             <label for="psw-repeat"><b>Re-type Password</b></label>
             <input type="password" style="border-radius:7px" placeholder="Retype Password" name="psw-repeat" required>
-            <button type="submit" class="button button2" style="margin-left:43%; border-radius:12px">Register</button>
+            <input type="submit" class="button button2" onclick="saveToFile()" style="margin-left:43%; border-radius:12px" value="Register"/>
     </form>
 </body>
 
