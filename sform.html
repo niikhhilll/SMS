@@ -80,6 +80,7 @@
 
         input[type=text],
         input[type=password],
+        input[type=email],
         textarea {
             width: 100%;
             padding: 15px;
@@ -90,7 +91,8 @@
         }
 
         input[type=text]:focus,
-        input[type=password]:focus {
+        input[type=password]:focus,
+        input[type=email]:focus {
             background-color: rgb(255, 182, 45);
             outline: none;
         }
@@ -177,7 +179,7 @@
             <textarea style="border-radius:7px" cols="80" rows="5" placeholder="Current Address" id="address" required>
 </textarea>
             <label for="email"><b>Email</b></label>
-            <input type="text" style="border-radius:7px" placeholder="Enter Email" name="email" id="email" required>
+            <input type="email" style="border-radius:7px" placeholder="Enter Email" name="email" id="email" required>
 
             <label for="psw"><b>Password</b></label>
             <input type="password" style="border-radius:7px" placeholder="Enter Password" name="psw" id="password"
